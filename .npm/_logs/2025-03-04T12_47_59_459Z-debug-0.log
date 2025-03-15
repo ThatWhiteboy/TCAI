@@ -1,0 +1,428 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@9.2.0
+2 info using node@v18.19.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 4ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 3ms
+6 timing config:load:builtin Completed in 3ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/home/niles0711/titan_cloud_ai/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 2ms
+11 timing config:load:file:/home/niles0711/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 15ms
+17 timing npm:load:configload Completed in 15ms
+18 timing npm:load:mkdirpcache Completed in 0ms
+19 timing npm:load:mkdirplogs Completed in 1ms
+20 verbose title npm update package-name
+21 verbose argv "update" "package-name"
+22 timing npm:load:setTitle Completed in 3ms
+23 timing config:load:flatten Completed in 5ms
+24 timing npm:load:display Completed in 6ms
+25 verbose logfile logs-max:10 dir:/home/niles0711/.npm/_logs/2025-03-04T12_47_59_459Z-
+26 verbose logfile /home/niles0711/.npm/_logs/2025-03-04T12_47_59_459Z-debug-0.log
+27 timing npm:load:logFile Completed in 7ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 34ms
+31 silly logfile start cleaning logs, removing 1 files
+32 timing config:load:flatten Completed in 1ms
+33 timing arborist:ctor Completed in 2ms
+34 silly logfile done cleaning log files
+35 timing idealTree:init Completed in 133ms
+36 timing idealTree:userRequests Completed in 1ms
+37 silly idealTree buildDeps
+38 silly fetch manifest package-name@^0.1.0
+39 timing arborist:ctor Completed in 1ms
+40 http fetch GET 200 https://registry.npmjs.org/package-name 89ms (cache hit)
+41 silly placeDep ROOT package-name@0.1.0 KEEP for:  want: ^0.1.0
+42 timing idealTree:#root Completed in 100ms
+43 timing idealTree:buildDeps Completed in 102ms
+44 timing idealTree:fixDepFlags Completed in 1ms
+45 warn EBADENGINE Unsupported engine {
+45 warn EBADENGINE   package: 'auto-reload-brunch@1.4.0',
+45 warn EBADENGINE   required: { node: '~0.6.10 || 0.8 || 0.9' },
+45 warn EBADENGINE   current: { node: 'v18.19.0', npm: '9.2.0' }
+45 warn EBADENGINE }
+46 warn EBADENGINE Unsupported engine {
+46 warn EBADENGINE   package: 'coffeelint-brunch@1.4.4',
+46 warn EBADENGINE   required: { node: '~0.6.10 || 0.8 || 0.9' },
+46 warn EBADENGINE   current: { node: 'v18.19.0', npm: '9.2.0' }
+46 warn EBADENGINE }
+47 warn EBADENGINE Unsupported engine {
+47 warn EBADENGINE   package: 'emblem-brunch@0.1.1',
+47 warn EBADENGINE   required: { node: '~0.6.10 || 0.8 || 0.9' },
+47 warn EBADENGINE   current: { node: 'v18.19.0', npm: '9.2.0' }
+47 warn EBADENGINE }
+48 warn EBADENGINE Unsupported engine {
+48 warn EBADENGINE   package: 'package-name@0.1.0',
+48 warn EBADENGINE   required: { node: '~0.6.10 || 0.8 || 0.9' },
+48 warn EBADENGINE   current: { node: 'v18.19.0', npm: '9.2.0' }
+48 warn EBADENGINE }
+49 timing idealTree Completed in 256ms
+50 timing reify:loadTrees Completed in 258ms
+51 timing reify:diffTrees Completed in 8ms
+52 silly reify moves {}
+53 timing reify:retireShallow Completed in 0ms
+54 timing reify:createSparse Completed in 3ms
+55 timing reify:loadBundles Completed in 0ms
+56 silly audit bulk request {
+56 silly audit   '@asamuzakjp/css-color': [ '2.8.3' ],
+56 silly audit   '@csstools/color-helpers': [ '5.0.2' ],
+56 silly audit   '@csstools/css-calc': [ '2.1.2' ],
+56 silly audit   '@csstools/css-color-parser': [ '3.0.8' ],
+56 silly audit   '@csstools/css-parser-algorithms': [ '3.0.4' ],
+56 silly audit   '@csstools/css-tokenizer': [ '3.0.3' ],
+56 silly audit   ajv: [ '6.12.6' ],
+56 silly audit   amdefine: [ '1.0.1' ],
+56 silly audit   asn1: [ '0.2.6' ],
+56 silly audit   'assert-plus': [ '1.0.0' ],
+56 silly audit   asynckit: [ '0.4.0' ],
+56 silly audit   'auto-reload-brunch': [ '1.4.0' ],
+56 silly audit   'aws-sign2': [ '0.7.0' ],
+56 silly audit   aws4: [ '1.13.2' ],
+56 silly audit   'balanced-match': [ '1.0.2' ],
+56 silly audit   'bcrypt-pbkdf': [ '1.0.2' ],
+56 silly audit   bindings: [ '1.5.0' ],
+56 silly audit   'brace-expansion': [ '1.1.11' ],
+56 silly audit   caseless: [ '0.12.0' ],
+56 silly audit   chainsaw: [ '0.0.9' ],
+56 silly audit   'clean-css': [ '0.10.2' ],
+56 silly audit   'clean-css-brunch': [ '1.5.1' ],
+56 silly audit   'coffee-script': [ '1.3.3', '1.4.0' ],
+56 silly audit   'coffee-script-brunch': [ '1.5.1' ],
+56 silly audit   coffeelint: [ '2.1.0' ],
+56 silly audit   'coffeelint-brunch': [ '1.4.4' ],
+56 silly audit   coffeescript: [ '2.7.0' ],
+56 silly audit   'combined-stream': [ '1.0.8' ],
+56 silly audit   commander: [ '1.1.1', '0.6.1' ],
+56 silly audit   'concat-map': [ '0.0.1' ],
+56 silly audit   contextify: [ '0.1.15' ],
+56 silly audit   'core-util-is': [ '1.0.2' ],
+56 silly audit   'css-brunch': [ '1.5.1' ],
+56 silly audit   cssom: [ '0.2.5' ],
+56 silly audit   cssstyle: [ '4.2.1' ],
+56 silly audit   dashdash: [ '1.14.1' ],
+56 silly audit   debug: [ '4.4.0' ],
+56 silly audit   'delayed-stream': [ '1.0.0' ],
+56 silly audit   'ecc-jsbn': [ '0.1.2' ],
+56 silly audit   'emblem-brunch': [ '0.1.1' ],
+56 silly audit   extend: [ '3.0.2' ],
+56 silly audit   extsprintf: [ '1.3.0' ],
+56 silly audit   'fast-deep-equal': [ '3.1.3' ],
+56 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+56 silly audit   'file-uri-to-path': [ '1.0.0' ],
+56 silly audit   'forever-agent': [ '0.6.1' ],
+56 silly audit   'form-data': [ '2.3.3' ],
+56 silly audit   'fs.realpath': [ '1.0.0' ],
+56 silly audit   getpass: [ '0.1.7' ],
+56 silly audit   glob: [ '7.2.3' ],
+56 silly audit   'har-schema': [ '2.0.0' ],
+56 silly audit   'har-validator': [ '5.1.5' ],
+56 silly audit   hashish: [ '0.0.4' ],
+56 silly audit   htmlparser: [ '1.7.7' ],
+56 silly audit   'http-signature': [ '1.2.0' ],
+56 silly audit   ignore: [ '3.3.10' ],
+56 silly audit   imagemagick: [ '0.1.2' ],
+56 silly audit   inflight: [ '1.0.6' ],
+56 silly audit   inherits: [ '2.0.4' ],
+56 silly audit   'is-typedarray': [ '1.0.0' ],
+56 silly audit   isstream: [ '0.1.2' ],
+56 silly audit   'javascript-brunch': [ '1.5.1' ],
+56 silly audit   jsbn: [ '0.1.1' ],
+56 silly audit   jsdom: [ '0.2.19' ],
+56 silly audit   'json-schema': [ '0.4.0' ],
+56 silly audit   'json-schema-traverse': [ '0.4.1' ],
+56 silly audit   'json-stringify-safe': [ '5.0.1' ],
+56 silly audit   jsprim: [ '1.4.2' ],
+56 silly audit   keypress: [ '0.1.0' ],
+56 silly audit   'lru-cache': [ '10.4.3' ],
+56 silly audit   'mime-db': [ '1.52.0' ],
+56 silly audit   'mime-types': [ '2.1.35' ],
+56 silly audit   minimatch: [ '3.1.2' ],
+56 silly audit   minimist: [ '0.0.10' ],
+56 silly audit   mkdirp: [ '0.3.5' ],
+56 silly audit   ms: [ '2.1.3' ],
+56 silly audit   nan: [ '2.22.2' ],
+56 silly audit   nib: [ '0.9.2' ],
+56 silly audit   stylus: [ '0.31.0', '0.32.1' ],
+56 silly audit   'node-sprite': [ '0.1.1' ],
+56 silly audit   'oauth-sign': [ '0.9.0' ],
+56 silly audit   once: [ '1.4.0' ],
+56 silly audit   optimist: [ '0.6.1', '0.3.7' ],
+56 silly audit   options: [ '0.0.6' ],
+56 silly audit   'package-name': [ '0.1.0' ],
+56 silly audit   'path-is-absolute': [ '1.0.1' ],
+56 silly audit   'performance-now': [ '2.1.0' ],
+56 silly audit   psl: [ '1.15.0' ],
+56 silly audit   punycode: [ '2.3.1' ],
+56 silly audit   qs: [ '6.5.3' ],
+56 silly audit   request: [ '2.88.2' ],
+56 silly audit   resolve: [ '0.6.3' ],
+56 silly audit   'rrweb-cssom': [ '0.8.0' ],
+56 silly audit   'safe-buffer': [ '5.2.1' ],
+56 silly audit   'safer-buffer': [ '2.1.2' ],
+56 silly audit   seq: [ '0.3.5' ],
+56 silly audit   'source-map': [ '0.1.43' ],
+56 silly audit   sshpk: [ '1.18.0' ],
+56 silly audit   'strip-json-comments': [ '1.0.4' ],
+56 silly audit   'stylus-brunch': [ '1.5.1' ],
+56 silly audit   tinycolor: [ '0.0.1' ],
+56 silly audit   'tough-cookie': [ '2.5.0' ],
+56 silly audit   traverse: [ '0.3.9' ],
+56 silly audit   'tunnel-agent': [ '0.6.0' ],
+56 silly audit   tweetnacl: [ '0.14.5' ],
+56 silly audit   'uglify-js': [ '2.2.5' ],
+56 silly audit   'uglify-js-brunch': [ '1.5.1' ],
+56 silly audit   underscore: [ '1.3.1' ],
+56 silly audit   'uri-js': [ '4.4.1' ],
+56 silly audit   uuid: [ '3.4.0' ],
+56 silly audit   verror: [ '1.10.0' ],
+56 silly audit   watch: [ '0.5.1' ],
+56 silly audit   wordwrap: [ '0.0.3' ],
+56 silly audit   wrappy: [ '1.0.2' ],
+56 silly audit   ws: [ '0.4.20' ]
+56 silly audit }
+57 timing reifyNode:node_modules/bindings Completed in 96ms
+58 timing reifyNode:node_modules/file-uri-to-path Completed in 105ms
+59 timing reifyNode:node_modules/contextify Completed in 109ms
+60 timing reifyNode:node_modules/nan Completed in 128ms
+61 timing reify:unpack Completed in 128ms
+62 timing reify:unretire Completed in 0ms
+63 timing build:queue Completed in 2ms
+64 info run contextify@0.1.15 install node_modules/contextify node-gyp rebuild
+65 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 188ms
+66 timing auditReport:getReport Completed in 193ms
+67 silly audit report {
+67 silly audit report   'clean-css': [
+67 silly audit report     {
+67 silly audit report       id: 1091669,
+67 silly audit report       url: 'https://github.com/advisories/GHSA-wxhq-pm8v-cw75',
+67 silly audit report       title: 'Regular Expression Denial of Service in clean-css',
+67 silly audit report       severity: 'low',
+67 silly audit report       vulnerable_versions: '<4.1.11',
+67 silly audit report       cwe: [Array],
+67 silly audit report       cvss: [Object]
+67 silly audit report     }
+67 silly audit report   ],
+67 silly audit report   minimist: [
+67 silly audit report     {
+67 silly audit report       id: 1097677,
+67 silly audit report       url: 'https://github.com/advisories/GHSA-xvch-5gv4-984h',
+67 silly audit report       title: 'Prototype Pollution in minimist',
+67 silly audit report       severity: 'critical',
+67 silly audit report       vulnerable_versions: '<0.2.4',
+67 silly audit report       cwe: [Array],
+67 silly audit report       cvss: [Object]
+67 silly audit report     },
+67 silly audit report     {
+67 silly audit report       id: 1096466,
+67 silly audit report       url: 'https://github.com/advisories/GHSA-vh95-rmgr-6w4m',
+67 silly audit report       title: 'Prototype Pollution in minimist',
+67 silly audit report       severity: 'moderate',
+67 silly audit report       vulnerable_versions: '<0.2.1',
+67 silly audit report       cwe: [Array],
+67 silly audit report       cvss: [Object]
+67 silly audit report     }
+67 silly audit report   ],
+67 silly audit report   request: [
+67 silly audit report     {
+67 silly audit report       id: 1096727,
+67 silly audit report       url: 'https://github.com/advisories/GHSA-p8p7-x288-28g6',
+67 silly audit report       title: 'Server-Side Request Forgery in Request',
+67 silly audit report       severity: 'moderate',
+67 silly audit report       vulnerable_versions: '<=2.88.2',
+67 silly audit report       cwe: [Array],
+67 silly audit report       cvss: [Object]
+67 silly audit report     }
+67 silly audit report   ],
+67 silly audit report   'tough-cookie': [
+67 silly audit report     {
+67 silly audit report       id: 1097682,
+67 silly audit report       url: 'https://github.com/advisories/GHSA-72xf-g2v4-qvf3',
+67 silly audit report       title: 'tough-cookie Prototype Pollution vulnerability',
+67 silly audit report       severity: 'moderate',
+67 silly audit report       vulnerable_versions: '<4.1.3',
+67 silly audit report       cwe: [Array],
+67 silly audit report       cvss: [Object]
+67 silly audit report     }
+67 silly audit report   ],
+67 silly audit report   'uglify-js': [
+67 silly audit report     {
+67 silly audit report       id: 1091686,
+67 silly audit report       url: 'https://github.com/advisories/GHSA-c9f4-xj24-8jqx',
+67 silly audit report       title: 'Regular Expression Denial of Service in uglify-js',
+67 silly audit report       severity: 'high',
+67 silly audit report       vulnerable_versions: '<2.6.0',
+67 silly audit report       cwe: [Array],
+67 silly audit report       cvss: [Object]
+67 silly audit report     },
+67 silly audit report     {
+67 silly audit report       id: 1091710,
+67 silly audit report       url: 'https://github.com/advisories/GHSA-34r7-q49f-h37c',
+67 silly audit report       title: 'Incorrect Handling of Non-Boolean Comparisons During Minification in uglify-js',
+67 silly audit report       severity: 'critical',
+67 silly audit report       vulnerable_versions: '<2.4.24',
+67 silly audit report       cwe: [Array],
+67 silly audit report       cvss: [Object]
+67 silly audit report     }
+67 silly audit report   ],
+67 silly audit report   ws: [
+67 silly audit report     {
+67 silly audit report       id: 1091478,
+67 silly audit report       url: 'https://github.com/advisories/GHSA-5v72-xg48-5rpm',
+67 silly audit report       title: 'Denial of Service in ws',
+67 silly audit report       severity: 'high',
+67 silly audit report       vulnerable_versions: '>=0.2.6 <1.1.5',
+67 silly audit report       cwe: [Array],
+67 silly audit report       cvss: [Object]
+67 silly audit report     },
+67 silly audit report     {
+67 silly audit report       id: 1093982,
+67 silly audit report       url: 'https://github.com/advisories/GHSA-2mhh-w6q8-5hxw',
+67 silly audit report       title: 'Remote Memory Disclosure in ws',
+67 silly audit report       severity: 'low',
+67 silly audit report       vulnerable_versions: '<1.0.1',
+67 silly audit report       cwe: [Array],
+67 silly audit report       cvss: [Object]
+67 silly audit report     },
+67 silly audit report     {
+67 silly audit report       id: 1090891,
+67 silly audit report       url: 'https://github.com/advisories/GHSA-6663-c963-2gqg',
+67 silly audit report       title: 'DoS due to excessively large websocket message in ws',
+67 silly audit report       severity: 'high',
+67 silly audit report       vulnerable_versions: '<1.1.1',
+67 silly audit report       cwe: [Array],
+67 silly audit report       cvss: [Object]
+67 silly audit report     }
+67 silly audit report   ]
+67 silly audit report }
+68 timing metavuln:cache:get:security-advisory:clean-css:iMGvPnQPibsv5sFRVwiwq5tChAgPgMixbCiMVnE7uOtiV7ihb7wX2nCVu/GtFsPTjz/NWWlr2eQ3/hntNL0aVQ== Completed in 20ms
+69 timing metavuln:cache:get:security-advisory:minimist:QimlM5Z6RrlJkvnLve505LPmyXiRKjlmN2wsiL9+HewfCu+Fa13/XaY2fHzsWFIjaoVa5OLkSeRydwJ9iPePvQ== Completed in 18ms
+70 timing metavuln:cache:get:security-advisory:minimist:rIccfKG/WgGQHCq61vlHWGeeRSnFST18fFsFAPa1Q+DaBX3wJ5inrhpj/FqqHv0K1bfrQHIcbJH1R0VYw1sW5g== Completed in 18ms
+71 timing metavuln:cache:get:security-advisory:request:YWMj9j1MPluG/i7GM3/il619Yyh/e9mxa0CiULhZGXRZl+TQlFyAG7gUf9x/Cj8XvveNYjOq7h13G6ZKSAmEzg== Completed in 19ms
+72 timing metavuln:cache:get:security-advisory:tough-cookie:HH4YVJ2IpK7ANH6p8LNg+k61Fu3TjSqeiGZyE/iWXMDZiu9lna7Sl4I8RyLwD0qX6/1Wt6M1uDH5lAibFJHdLA== Completed in 18ms
+73 timing metavuln:cache:get:security-advisory:uglify-js:hkwtVp5Fvwe6o2MAcQo+RyegEtzqEyBw2xUs87y6TNaHzV+TQ0nkFIvmWpLbAXKt881YQNkvrwPJACyKVdQ1lw== Completed in 17ms
+74 timing metavuln:cache:get:security-advisory:uglify-js:sIR+f54Y390B18gaW2mKxeeKExLmqIiE6d/MoH/39jLX6WrSSRO6eq0QhXD261Gq2uqv8C+KXY2/vWEQpGSJ0Q== Completed in 18ms
+75 timing metavuln:cache:get:security-advisory:ws:OOTyj3rdoCycsjAu8ggQ4YeThqQp1KuZp6AY44aojML/ef4S4ntpjIGBTczB1C/9SfKtrrWuj8iYb4J6q709tQ== Completed in 17ms
+76 timing metavuln:cache:get:security-advisory:ws:aVHUWcfHgV7NM39IXPuIb3m2ocLIXyE4Mot0EnSDI46oN/gWO+U1xr5QLpKo4ZvodKLplXTvf/ggxzcR27XHgQ== Completed in 17ms
+77 timing metavuln:cache:get:security-advisory:ws:Txpesqi4pDU7R0EKKVir8IYOT81oqVBYZms6a+VLqx/qspKQ26S9UT+ZxO6FyRubDUkPWrk0txdJg1EsnRkQyQ== Completed in 17ms
+78 http fetch GET 200 https://registry.npmjs.org/request 35ms (cache hit)
+79 timing metavuln:packument:request Completed in 42ms
+80 timing metavuln:load:security-advisory:request:1096727 Completed in 2ms
+81 timing metavuln:calculate:security-advisory:request:1096727 Completed in 44ms
+82 http fetch GET 200 https://registry.npmjs.org/ws 42ms (cache hit)
+83 timing metavuln:packument:ws Completed in 44ms
+84 timing metavuln:load:security-advisory:ws:1091478 Completed in 2ms
+85 timing metavuln:calculate:security-advisory:ws:1091478 Completed in 46ms
+86 timing metavuln:load:security-advisory:ws:1093982 Completed in 1ms
+87 timing metavuln:calculate:security-advisory:ws:1093982 Completed in 47ms
+88 timing metavuln:load:security-advisory:ws:1090891 Completed in 1ms
+89 timing metavuln:calculate:security-advisory:ws:1090891 Completed in 47ms
+90 http fetch GET 200 https://registry.npmjs.org/uglify-js 50ms (cache hit)
+91 timing metavuln:packument:uglify-js Completed in 56ms
+92 timing metavuln:load:security-advisory:uglify-js:1091686 Completed in 1ms
+93 timing metavuln:calculate:security-advisory:uglify-js:1091686 Completed in 58ms
+94 timing metavuln:load:security-advisory:uglify-js:1091710 Completed in 1ms
+95 timing metavuln:calculate:security-advisory:uglify-js:1091710 Completed in 59ms
+96 http fetch GET 200 https://registry.npmjs.org/clean-css 63ms (cache hit)
+97 timing metavuln:packument:clean-css Completed in 64ms
+98 timing metavuln:load:security-advisory:clean-css:1091669 Completed in 1ms
+99 timing metavuln:calculate:security-advisory:clean-css:1091669 Completed in 67ms
+100 http fetch GET 200 https://registry.npmjs.org/minimist 65ms (cache hit)
+101 timing metavuln:packument:minimist Completed in 66ms
+102 timing metavuln:load:security-advisory:minimist:1097677 Completed in 0ms
+103 timing metavuln:calculate:security-advisory:minimist:1097677 Completed in 67ms
+104 timing metavuln:load:security-advisory:minimist:1096466 Completed in 0ms
+105 timing metavuln:calculate:security-advisory:minimist:1096466 Completed in 66ms
+106 http fetch GET 200 https://registry.npmjs.org/tough-cookie 67ms (cache hit)
+107 timing metavuln:packument:tough-cookie Completed in 68ms
+108 timing metavuln:load:security-advisory:tough-cookie:1097682 Completed in 0ms
+109 timing metavuln:calculate:security-advisory:tough-cookie:1097682 Completed in 69ms
+110 timing metavuln:cache:get:security-advisory:clean-css-brunch:e5O9HjtU22JVM0OVjZ/5Jw+hyF8CBqgzuZ6zC53ydvUqpc5mzSBbkJ9ZwU1Wd7yefz57NhYzKCyi/3wlRtjA6g== Completed in 6ms
+111 http fetch GET 200 https://registry.npmjs.org/clean-css-brunch 9ms (cache hit)
+112 timing metavuln:packument:clean-css-brunch Completed in 10ms
+113 timing metavuln:load:security-advisory:clean-css-brunch:iMGvPnQPibsv5sFRVwiwq5tChAgPgMixbCiMVnE7uOtiV7ihb7wX2nCVu/GtFsPTjz/NWWlr2eQ3/hntNL0aVQ== Completed in 0ms
+114 timing metavuln:calculate:security-advisory:clean-css-brunch:iMGvPnQPibsv5sFRVwiwq5tChAgPgMixbCiMVnE7uOtiV7ihb7wX2nCVu/GtFsPTjz/NWWlr2eQ3/hntNL0aVQ== Completed in 10ms
+115 timing metavuln:cache:get:security-advisory:optimist:tmVmYWS6FQcT7y6XrbgzURIKU76vdRRKah+xrFm+g9dplgQQr5BLqmVbXNlBT5jyeurE5qH/zpqm4XimMXxVfg== Completed in 2ms
+116 http fetch GET 200 https://registry.npmjs.org/optimist 6ms (cache hit)
+117 timing metavuln:packument:optimist Completed in 8ms
+118 timing metavuln:load:security-advisory:optimist:QimlM5Z6RrlJkvnLve505LPmyXiRKjlmN2wsiL9+HewfCu+Fa13/XaY2fHzsWFIjaoVa5OLkSeRydwJ9iPePvQ== Completed in 0ms
+119 timing metavuln:calculate:security-advisory:optimist:QimlM5Z6RrlJkvnLve505LPmyXiRKjlmN2wsiL9+HewfCu+Fa13/XaY2fHzsWFIjaoVa5OLkSeRydwJ9iPePvQ== Completed in 9ms
+120 timing metavuln:cache:get:security-advisory:jsdom:NUrChmA+vUmQUPTLJ6tJuyWFjtb7mZkYXgH4lycYGv8Erl+jrRUoCMlWzUb2AN/X3L8RcCRagp0IJQr/PmQ8kw== Completed in 3ms
+121 http fetch GET 200 https://registry.npmjs.org/jsdom 7ms (cache hit)
+122 timing metavuln:packument:jsdom Completed in 13ms
+123 timing metavuln:load:security-advisory:jsdom:YWMj9j1MPluG/i7GM3/il619Yyh/e9mxa0CiULhZGXRZl+TQlFyAG7gUf9x/Cj8XvveNYjOq7h13G6ZKSAmEzg== Completed in 3ms
+124 timing metavuln:calculate:security-advisory:jsdom:YWMj9j1MPluG/i7GM3/il619Yyh/e9mxa0CiULhZGXRZl+TQlFyAG7gUf9x/Cj8XvveNYjOq7h13G6ZKSAmEzg== Completed in 16ms
+125 timing metavuln:cache:get:security-advisory:request:SXLdKIK0oNYiZcJA1zcvQ9uMNgtFuJ8RsciawDgUvI3vk/phuqOevDPc9iKvTxXaWKJ78SqXWm85UEYG2mYHYA== Completed in 7ms
+126 timing metavuln:load:security-advisory:request:HH4YVJ2IpK7ANH6p8LNg+k61Fu3TjSqeiGZyE/iWXMDZiu9lna7Sl4I8RyLwD0qX6/1Wt6M1uDH5lAibFJHdLA== Completed in 0ms
+127 timing metavuln:calculate:security-advisory:request:HH4YVJ2IpK7ANH6p8LNg+k61Fu3TjSqeiGZyE/iWXMDZiu9lna7Sl4I8RyLwD0qX6/1Wt6M1uDH5lAibFJHdLA== Completed in 8ms
+128 timing metavuln:cache:get:security-advisory:uglify-js-brunch:H7iADQmIPrq6M3XiBHNghhy59A5BkYPjMayp4HRfB8q7jVMgCundrsSiZaaULQxJfEh0RWNorX2ZOfEv85Tltg== Completed in 4ms
+129 http fetch GET 200 https://registry.npmjs.org/uglify-js-brunch 7ms (cache hit)
+130 timing metavuln:packument:uglify-js-brunch Completed in 8ms
+131 timing metavuln:load:security-advisory:uglify-js-brunch:hkwtVp5Fvwe6o2MAcQo+RyegEtzqEyBw2xUs87y6TNaHzV+TQ0nkFIvmWpLbAXKt881YQNkvrwPJACyKVdQ1lw== Completed in 0ms
+132 timing metavuln:calculate:security-advisory:uglify-js-brunch:hkwtVp5Fvwe6o2MAcQo+RyegEtzqEyBw2xUs87y6TNaHzV+TQ0nkFIvmWpLbAXKt881YQNkvrwPJACyKVdQ1lw== Completed in 8ms
+133 timing metavuln:cache:get:security-advisory:auto-reload-brunch:Z6riGLL0YpwnFPPuFm0qVEteSgW14zfzMyVkh14Byz6WgoPK7pkq43ajkSFYqdNNYYlkGdiMW3X5wQmnYfkK+w== Completed in 3ms
+134 http fetch GET 200 https://registry.npmjs.org/auto-reload-brunch 5ms (cache hit)
+135 timing metavuln:packument:auto-reload-brunch Completed in 7ms
+136 timing metavuln:load:security-advisory:auto-reload-brunch:aVHUWcfHgV7NM39IXPuIb3m2ocLIXyE4Mot0EnSDI46oN/gWO+U1xr5QLpKo4ZvodKLplXTvf/ggxzcR27XHgQ== Completed in 0ms
+137 timing metavuln:calculate:security-advisory:auto-reload-brunch:aVHUWcfHgV7NM39IXPuIb3m2ocLIXyE4Mot0EnSDI46oN/gWO+U1xr5QLpKo4ZvodKLplXTvf/ggxzcR27XHgQ== Completed in 7ms
+138 timing metavuln:packument:package-name Completed in 0ms
+139 timing metavuln:cache:get:security-advisory:package-name:sOVJJlFIkMbIcJz9TrYDJx+xll2t15UYubsL3p4/WL2XSH85jDtn6SAOv+aX7NvHZ4jGtwBv9Ioii/v8hQmYGA== Completed in 2ms
+140 timing metavuln:load:security-advisory:package-name:e5O9HjtU22JVM0OVjZ/5Jw+hyF8CBqgzuZ6zC53ydvUqpc5mzSBbkJ9ZwU1Wd7yefz57NhYzKCyi/3wlRtjA6g== Completed in 0ms
+141 timing metavuln:calculate:security-advisory:package-name:e5O9HjtU22JVM0OVjZ/5Jw+hyF8CBqgzuZ6zC53ydvUqpc5mzSBbkJ9ZwU1Wd7yefz57NhYzKCyi/3wlRtjA6g== Completed in 2ms
+142 timing metavuln:cache:get:security-advisory:coffeelint:R1/BQu+ntguMgngw1Oq4GtQhGQovY1Sn4P82+xy+HPlb2Jb2nisGHmy8joRpujYd3zHiBxOccp8Xd0DYZFyHXQ== Completed in 2ms
+143 http fetch GET 200 https://registry.npmjs.org/coffeelint 6ms (cache hit)
+144 timing metavuln:packument:coffeelint Completed in 7ms
+145 timing metavuln:load:security-advisory:coffeelint:tmVmYWS6FQcT7y6XrbgzURIKU76vdRRKah+xrFm+g9dplgQQr5BLqmVbXNlBT5jyeurE5qH/zpqm4XimMXxVfg== Completed in 1ms
+146 timing metavuln:calculate:security-advisory:coffeelint:tmVmYWS6FQcT7y6XrbgzURIKU76vdRRKah+xrFm+g9dplgQQr5BLqmVbXNlBT5jyeurE5qH/zpqm4XimMXxVfg== Completed in 9ms
+147 timing metavuln:cache:get:security-advisory:emblem-brunch:/DYXoM+FCwxLLop9gQ4i9q0aqWdUiEaATwCmWfOtwO2uohmQNf232xwpjCrCIFEaVN262bqYvosJ0idC/dIvqg== Completed in 2ms
+148 http fetch GET 200 https://registry.npmjs.org/emblem-brunch 3ms (cache hit)
+149 timing metavuln:packument:emblem-brunch Completed in 5ms
+150 timing metavuln:load:security-advisory:emblem-brunch:NUrChmA+vUmQUPTLJ6tJuyWFjtb7mZkYXgH4lycYGv8Erl+jrRUoCMlWzUb2AN/X3L8RcCRagp0IJQr/PmQ8kw== Completed in 0ms
+151 timing metavuln:calculate:security-advisory:emblem-brunch:NUrChmA+vUmQUPTLJ6tJuyWFjtb7mZkYXgH4lycYGv8Erl+jrRUoCMlWzUb2AN/X3L8RcCRagp0IJQr/PmQ8kw== Completed in 5ms
+152 timing metavuln:cache:get:security-advisory:package-name:jHD3jSeDaaGGTNWh9FU3pS+vMczauIzfUWxkobQTyrUGdgTQc8za9GPt0jLBDumfCSGTkWrJn7vnnGB4nLhLeQ== Completed in 1ms
+153 timing metavuln:load:security-advisory:package-name:H7iADQmIPrq6M3XiBHNghhy59A5BkYPjMayp4HRfB8q7jVMgCundrsSiZaaULQxJfEh0RWNorX2ZOfEv85Tltg== Completed in 1ms
+154 timing metavuln:calculate:security-advisory:package-name:H7iADQmIPrq6M3XiBHNghhy59A5BkYPjMayp4HRfB8q7jVMgCundrsSiZaaULQxJfEh0RWNorX2ZOfEv85Tltg== Completed in 2ms
+155 timing metavuln:cache:get:security-advisory:package-name:3NJ3h/iWsLndlbYS2tOMQVhubhEnpQOuVlYDQ3n/9eDthqsoNf7Xd0AGOTQbIJoBdG1uZrsXLAm3KFVICgxxcw== Completed in 1ms
+156 timing metavuln:load:security-advisory:package-name:Z6riGLL0YpwnFPPuFm0qVEteSgW14zfzMyVkh14Byz6WgoPK7pkq43ajkSFYqdNNYYlkGdiMW3X5wQmnYfkK+w== Completed in 0ms
+157 timing metavuln:calculate:security-advisory:package-name:Z6riGLL0YpwnFPPuFm0qVEteSgW14zfzMyVkh14Byz6WgoPK7pkq43ajkSFYqdNNYYlkGdiMW3X5wQmnYfkK+w== Completed in 1ms
+158 timing metavuln:cache:get:security-advisory:coffeelint-brunch:7gGHI2TBJPSDbuyvs8bFqNQzEQBFPssAUdhQShPJvMlvh3iSHeB8WMraqttxVOHNy9vRx9r8pBMltq4sOyiUMg== Completed in 2ms
+159 http fetch GET 200 https://registry.npmjs.org/coffeelint-brunch 5ms (cache hit)
+160 timing metavuln:packument:coffeelint-brunch Completed in 6ms
+161 timing metavuln:load:security-advisory:coffeelint-brunch:R1/BQu+ntguMgngw1Oq4GtQhGQovY1Sn4P82+xy+HPlb2Jb2nisGHmy8joRpujYd3zHiBxOccp8Xd0DYZFyHXQ== Completed in 0ms
+162 timing metavuln:calculate:security-advisory:coffeelint-brunch:R1/BQu+ntguMgngw1Oq4GtQhGQovY1Sn4P82+xy+HPlb2Jb2nisGHmy8joRpujYd3zHiBxOccp8Xd0DYZFyHXQ== Completed in 6ms
+163 timing metavuln:cache:get:security-advisory:package-name:/z6BlDvTWA9i/lkPtXe7opl/h74OhdO4Wi7JQ3/yfQD7Oq6pJGO2lco76C2fEFX2iTmi7NP9tnBDFNhX4sdT8Q== Completed in 1ms
+164 timing metavuln:load:security-advisory:package-name:/DYXoM+FCwxLLop9gQ4i9q0aqWdUiEaATwCmWfOtwO2uohmQNf232xwpjCrCIFEaVN262bqYvosJ0idC/dIvqg== Completed in 0ms
+165 timing metavuln:calculate:security-advisory:package-name:/DYXoM+FCwxLLop9gQ4i9q0aqWdUiEaATwCmWfOtwO2uohmQNf232xwpjCrCIFEaVN262bqYvosJ0idC/dIvqg== Completed in 1ms
+166 timing auditReport:init Completed in 164ms
+167 timing reify:audit Completed in 360ms
+168 info run contextify@0.1.15 install { code: 1, signal: null }
+169 verbose reify failed optional dependency /home/niles0711/titan_cloud_ai/node_modules/contextify
+170 silly reify mark deleted [ '/home/niles0711/titan_cloud_ai/node_modules/contextify' ]
+171 verbose reify failed optional dependency /home/niles0711/titan_cloud_ai/node_modules/bindings
+172 silly reify mark deleted [ '/home/niles0711/titan_cloud_ai/node_modules/bindings' ]
+173 verbose reify failed optional dependency /home/niles0711/titan_cloud_ai/node_modules/nan
+174 silly reify mark deleted [ '/home/niles0711/titan_cloud_ai/node_modules/nan' ]
+175 verbose reify failed optional dependency /home/niles0711/titan_cloud_ai/node_modules/file-uri-to-path
+176 silly reify mark deleted [ '/home/niles0711/titan_cloud_ai/node_modules/file-uri-to-path' ]
+177 timing build:run:install:node_modules/contextify Completed in 1908ms
+178 timing build:run:install Completed in 1908ms
+179 timing build:deps Completed in 1911ms
+180 timing build Completed in 1911ms
+181 timing reify:build Completed in 1912ms
+182 timing reify:trash Completed in 10ms
+183 timing reify:save Completed in 44ms
+184 timing reify Completed in 2408ms
+185 silly ADD
+186 silly ADD
+187 silly ADD
+188 silly ADD
+189 timing command:update Completed in 2460ms
+190 verbose exit 0
+191 timing npm Completed in 2517ms
+192 info ok

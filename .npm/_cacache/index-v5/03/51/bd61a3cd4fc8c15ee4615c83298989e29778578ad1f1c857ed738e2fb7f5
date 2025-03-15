@@ -1,0 +1,2 @@
+
+c87d13a27e2cfe308f17008436833c333a5f8b29	{"key":"make-fetch-happen:request-cache:http://github.com/naltatis/node-imagemagick/tarball/master","integrity":null,"time":1741092342986,"size":"0","metadata":{"time":1741092342986,"url":"http://github.com/naltatis/node-imagemagick/tarball/master","reqHeaders":{},"resHeaders":{"location":"https://github.com/naltatis/node-imagemagick/tarball/master"},"options":{"compress":true},"status":301}}
