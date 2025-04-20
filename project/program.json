@@ -1,0 +1,287 @@
+{
+  "name": "titan-cloud-ai",
+  "version": "2.0.0",
+  "description": "Enterprise-grade AI automation platform for business optimization",
+  "type": "application",
+  "environment": {
+    "runtime": "node",
+    "version": "18.x",
+    "framework": "react",
+    "buildTool": "vite"
+  },
+  "architecture": {
+    "frontend": {
+      "type": "spa",
+      "framework": "react",
+      "routing": "react-router-dom",
+      "stateManagement": "react-query",
+      "styling": "tailwindcss"
+    },
+    "backend": {
+      "type": "serverless",
+      "provider": "netlify",
+      "api": "trpc",
+      "functions": "netlify-functions"
+    },
+    "database": {
+      "type": "external",
+      "provider": "stripe"
+    }
+  },
+  "features": {
+    "aiAutomation": true,
+    "analytics": true,
+    "billing": true,
+    "monitoring": true,
+    "security": true,
+    "compliance": true
+  },
+  "modules": [
+    {
+      "name": "analytics",
+      "path": "src/lib/analytics",
+      "description": "Analytics and metrics tracking system",
+      "dependencies": ["automation"]
+    },
+    {
+      "name": "ai",
+      "path": "src/lib/ai",
+      "description": "AI automation engine",
+      "dependencies": ["analytics"]
+    },
+    {
+      "name": "automation",
+      "path": "src/lib/automation",
+      "description": "Business process automation system",
+      "dependencies": ["analytics", "monitor"]
+    },
+    {
+      "name": "billing",
+      "path": "src/lib/stripe",
+      "description": "Payment processing and subscription management",
+      "dependencies": ["analytics"]
+    },
+    {
+      "name": "monitoring",
+      "path": "src/lib/monitor",
+      "description": "System monitoring and alerting",
+      "dependencies": ["analytics"]
+    },
+    {
+      "name": "compliance",
+      "path": "src/lib/compliance",
+      "description": "Regulatory compliance management",
+      "dependencies": ["analytics", "monitor"]
+    },
+    {
+      "name": "market",
+      "path": "src/lib/market",
+      "description": "Market analysis and expansion tools",
+      "dependencies": ["analytics", "ai"]
+    },
+    {
+      "name": "growth",
+      "path": "src/lib/growth",
+      "description": "Business growth automation",
+      "dependencies": ["analytics", "ai", "market"]
+    },
+    {
+      "name": "innovation",
+      "path": "src/lib/innovation",
+      "description": "Innovation pipeline management",
+      "dependencies": ["analytics", "ai", "market"]
+    },
+    {
+      "name": "replication",
+      "path": "src/lib/replication",
+      "description": "Business model replication system",
+      "dependencies": ["analytics", "ai", "market", "growth"]
+    }
+  ],
+  "pages": [
+    {
+      "name": "LandingPage",
+      "path": "src/pages/LandingPage.tsx",
+      "route": "/"
+    },
+    {
+      "name": "OnboardingPage",
+      "path": "src/pages/OnboardingPage.tsx",
+      "route": "/onboarding"
+    },
+    {
+      "name": "DashboardPage",
+      "path": "src/pages/DashboardPage.tsx",
+      "route": "/dashboard"
+    },
+    {
+      "name": "AnalyticsPage",
+      "path": "src/pages/AnalyticsPage.tsx",
+      "route": "/analytics"
+    },
+    {
+      "name": "BillingPage",
+      "path": "src/pages/BillingPage.tsx",
+      "route": "/billing"
+    },
+    {
+      "name": "SupportPage",
+      "path": "src/pages/SupportPage.tsx",
+      "route": "/support"
+    },
+    {
+      "name": "TermsOfService",
+      "path": "src/pages/legal/TermsOfService.tsx",
+      "route": "/legal/terms"
+    },
+    {
+      "name": "PrivacyPolicy",
+      "path": "src/pages/legal/PrivacyPolicy.tsx",
+      "route": "/legal/privacy"
+    },
+    {
+      "name": "CookiePolicy",
+      "path": "src/pages/legal/CookiePolicy.tsx",
+      "route": "/legal/cookies"
+    }
+  ],
+  "components": [
+    {
+      "name": "CookieConsent",
+      "path": "src/components/CookieConsent.tsx",
+      "description": "Cookie consent banner and preferences management"
+    },
+    {
+      "name": "LegalFooter",
+      "path": "src/components/LegalFooter.tsx",
+      "description": "Legal links footer component"
+    }
+  ],
+  "apis": [
+    {
+      "name": "trpc",
+      "path": "src/lib/trpc.ts",
+      "description": "tRPC client setup"
+    },
+    {
+      "name": "appRouter",
+      "path": "src/server/api.ts",
+      "description": "tRPC server router"
+    }
+  ],
+  "deployment": {
+    "provider": "netlify",
+    "buildCommand": "npm run build",
+    "publishDirectory": "dist",
+    "functions": "netlify/functions",
+    "environment": {
+      "NODE_VERSION": "18",
+      "NPM_FLAGS": "--no-audit --no-fund",
+      "NODE_ENV": "production"
+    }
+  },
+  "testing": {
+    "framework": "vitest",
+    "coverage": true,
+    "testFiles": "src/tests/**/*.{test,spec}.{js,ts,jsx,tsx}"
+  },
+  "dependencies": {
+    "core": [
+      "react",
+      "react-dom",
+      "react-router-dom",
+      "@tanstack/react-query",
+      "@trpc/client",
+      "@trpc/react-query",
+      "@trpc/server",
+      "zod"
+    ],
+    "ui": [
+      "lucide-react",
+      "chart.js",
+      "react-chartjs-2"
+    ],
+    "data": [
+      "date-fns",
+      "crypto-js"
+    ],
+    "payment": [
+      "@stripe/stripe-js"
+    ],
+    "monitoring": [
+      "@sentry/node",
+      "dd-trace",
+      "newrelic",
+      "prom-client",
+      "@elastic/apm-rum",
+      "systeminformation",
+      "node-cron",
+      "winston"
+    ],
+    "server": [
+      "compression",
+      "express-rate-limit",
+      "helmet",
+      "@netlify/functions"
+    ]
+  },
+  "devDependencies": {
+    "build": [
+      "vite",
+      "@vitejs/plugin-react",
+      "vite-plugin-compression",
+      "vite-plugin-node-polyfills",
+      "rollup-plugin-visualizer",
+      "terser"
+    ],
+    "styling": [
+      "tailwindcss",
+      "autoprefixer",
+      "postcss",
+      "cssnano"
+    ],
+    "typescript": [
+      "typescript",
+      "@types/react",
+      "@types/react-dom",
+      "@types/node",
+      "@types/crypto-js"
+    ],
+    "linting": [
+      "eslint",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "eslint-plugin-react-hooks",
+      "eslint-plugin-react-refresh",
+      "prettier",
+      "husky",
+      "lint-staged"
+    ],
+    "testing": [
+      "vitest",
+      "@vitest/coverage-v8",
+      "vitest-fetch-mock",
+      "memfs"
+    ],
+    "utils": [
+      "npm-run-all"
+    ]
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "validate": "npm-run-all --parallel type-check lint test",
+    "type-check": "tsc --noEmit",
+    "prepare": "husky install",
+    "predeploy": "npm run validate",
+    "deploy": "npm run build",
+    "postdeploy": "node scripts/verify-deployment.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

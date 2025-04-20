@@ -1,0 +1,1 @@
+[Previous content of optimizer.ts with error handling and recovery]

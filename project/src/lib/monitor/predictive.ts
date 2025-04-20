@@ -1,0 +1,1 @@
+[Content of src/lib/monitor/predictive.ts as shown above]

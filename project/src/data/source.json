@@ -1,0 +1,234 @@
+{
+  "site": {
+    "name": "Titan Cloud AI",
+    "domain": "titancloudai.com",
+    "description": "Enterprise-grade AI automation platform",
+    "integration": {
+      "analytics": true,
+      "automation": true,
+      "monitoring": true,
+      "optimization": true
+    },
+    "features": {
+      "aiAutomation": true,
+      "realTimeMonitoring": true,
+      "predictiveAnalytics": true,
+      "autoScaling": true,
+      "selfHealing": true
+    },
+    "security": {
+      "sslEnabled": true,
+      "ddosProtection": true,
+      "rateLimiting": true,
+      "contentSecurity": true
+    },
+    "performance": {
+      "caching": true,
+      "compression": true,
+      "optimization": true,
+      "cdnEnabled": true
+    }
+  },
+  "monitoring": {
+    "interval": 60,
+    "metrics": [
+      "cpu",
+      "memory",
+      "latency",
+      "errors",
+      "requests"
+    ],
+    "alerts": {
+      "email": true,
+      "slack": true,
+      "thresholds": {
+        "cpu": 80,
+        "memory": 85,
+        "latency": 200,
+        "errorRate": 0.01
+      }
+    }
+  },
+  "automation": {
+    "enabled": true,
+    "features": [
+      "deployment",
+      "scaling",
+      "optimization",
+      "recovery"
+    ],
+    "schedule": {
+      "maintenance": "0 0 * * *",
+      "backup": "0 */12 * * *",
+      "optimization": "0 */4 * * *"
+    }
+  },
+  "services": {
+    "ai": {
+      "models": [
+        "prediction",
+        "optimization",
+        "recommendation"
+      ],
+      "endpoints": {
+        "prediction": "/api/ai/predict",
+        "optimization": "/api/ai/optimize",
+        "recommendation": "/api/ai/recommend"
+      },
+      "performance": {
+        "latency": 150,
+        "accuracy": 0.95,
+        "availability": 0.999
+      }
+    },
+    "analytics": {
+      "metrics": [
+        "usage",
+        "performance",
+        "business",
+        "security"
+      ],
+      "reporting": {
+        "realtime": true,
+        "daily": true,
+        "weekly": true,
+        "monthly": true
+      },
+      "visualization": {
+        "charts": true,
+        "dashboards": true,
+        "alerts": true
+      }
+    },
+    "billing": {
+      "plans": [
+        {
+          "id": "starter",
+          "name": "Starter",
+          "price": {
+            "monthly": 49,
+            "yearly": 470
+          },
+          "features": [
+            "Up to 1,000 API requests/month",
+            "Basic AI Services",
+            "Email Support",
+            "Standard API Access",
+            "Basic Analytics"
+          ]
+        },
+        {
+          "id": "growth",
+          "name": "Growth",
+          "price": {
+            "monthly": 199,
+            "yearly": 1990
+          },
+          "features": [
+            "Up to 10,000 API requests/month",
+            "Advanced AI Services",
+            "Priority Support",
+            "Advanced API Access",
+            "Detailed Analytics",
+            "Custom Integrations"
+          ]
+        },
+        {
+          "id": "enterprise",
+          "name": "Enterprise",
+          "price": {
+            "monthly": 999,
+            "yearly": 9990
+          },
+          "features": [
+            "Unlimited API requests",
+            "Full AI Suite",
+            "24/7 Support",
+            "Dedicated API Gateway",
+            "Advanced Analytics",
+            "Custom Solutions",
+            "SLA Guarantee"
+          ]
+        }
+      ],
+      "payment": {
+        "methods": ["credit_card", "bank_transfer", "invoice"],
+        "processor": "stripe",
+        "currency": "USD",
+        "trialDays": 14
+      }
+    }
+  },
+  "deployment": {
+    "provider": "netlify",
+    "buildCommand": "npm run build",
+    "publishDirectory": "dist",
+    "environment": {
+      "NODE_VERSION": "20",
+      "NODE_ENV": "production"
+    },
+    "headers": {
+      "/*": {
+        "X-Frame-Options": "DENY",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Content-Security-Policy": "default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https: *.unsplash.com; font-src 'self' data: https:; connect-src 'self' https: wss:; frame-ancestors 'none';",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=()"
+      },
+      "/assets/*": {
+        "Cache-Control": "public, max-age=31536000, immutable",
+        "Access-Control-Allow-Origin": "*"
+      }
+    }
+  },
+  "integrations": {
+    "durable": {
+      "enabled": true,
+      "apiEndpoint": "https://api.durable.co",
+      "features": [
+        "siteIntegration",
+        "analyticsIntegration",
+        "contentAutomation",
+        "leadAutomation"
+      ]
+    },
+    "stripe": {
+      "enabled": true,
+      "publicKey": "pk_test_51O5KdPK5CNVmRVVGGi2mHVgxGXXEGBCnHPzrXUNfcWBXGHb6NgqkOgQJLhGBqZFPuVPxYKMBTUC5WPBXKwXOLGxq00OPwzLJNB",
+      "webhookEndpoint": "/api/webhook",
+      "products": [
+        {
+          "id": "price_starter",
+          "type": "subscription",
+          "interval": ["monthly", "yearly"]
+        },
+        {
+          "id": "price_growth",
+          "type": "subscription",
+          "interval": ["monthly", "yearly"]
+        },
+        {
+          "id": "price_enterprise",
+          "type": "subscription",
+          "interval": ["monthly", "yearly"]
+        }
+      ]
+    },
+    "azure": {
+      "enabled": true,
+      "services": {
+        "containerApps": true,
+        "blob": true,
+        "cosmosdb": true,
+        "cognitiveServices": true
+      },
+      "marketplace": {
+        "offerId": "titan-cloud-ai",
+        "planId": "standard",
+        "publisherId": "titan-technologies"
+      }
+    }
+  }
+}

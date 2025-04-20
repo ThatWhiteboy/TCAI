@@ -1,0 +1,1 @@
+[Content of src/lib/monitor/errorHandler.ts as shown above]

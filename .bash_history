@@ -595,3 +595,174 @@ def add_product():
 @login_manager.user_loader
 def load_user(user_id):
 if __name__ == '__main__':;     app.run(debug=True)
+#!/bin/bash
+# Step 1: Update and Install Required Packages
+echo "Updating system and installing dependencies..."
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y nodejs npm git curl wget unzip
+echo "Checking Node.js and npm versions..."
+node -v && npm -v
+# Step 2: Ensure Project Directory Exists and Move It If Needed
+echo "Checking for project directory in Downloads..."
+cd ~/Downloads
+ls -a
+PROJECT_DIR=$(ls -d */ 2>/dev/null | head -n 1)
+if [ -z "$PROJECT_DIR" ]; then     echo "No project folder found in Downloads. Please move your project to Linux Files manually.";     exit 1; fi
+echo "Moving project to Linux Files..."
+mv "$PROJECT_DIR" ~/LinuxFiles/
+cd ~/LinuxFiles/"$PROJECT_DIR"
+echo "Project found: $PROJECT_DIR"
+# Step 3: Install Project Dependencies
+echo "Installing project dependencies..."
+npm install
+# Step 4: Audit for Vulnerabilities and Fix Issues
+echo "Checking for vulnerabilities..."
+npm audit
+npm audit fix --force
+# Step 5: Set Up GitHub Repository and Push Changes
+echo "Configuring Git..."
+git config --global user.name "YourName"
+git config --global user.email "your-email@example.com"
+echo "Checking for Git repo..."
+if [ ! -d .git ]; then     git init;     git remote add origin https://github.com/your-username/your-repo.git;     git add .;     git commit -m "Initial commit";     git push -u origin main; fi
+# Step 6: Deploy to Netlify
+echo "Installing Netlify CLI..."
+npm install -g netlify-cli
+echo "Deploying to Netlify..."
+netlify login
+netlify init
+netlify deploy --prod
+# Step 7: Integrate with Durable.com
+echo "Setting up Durable.com integration..."
+curl -X POST "https://api.durable.com/webhook" -H "Content-Type: application/json" -d '{"project": "$PROJECT_DIR", "status": "connected"}'
+# Step 8: Optimize Website Performance
+echo "Optimizing website..."
+npm run build
+# Step 9: Final Verification
+echo "Setup complete! Your website is deployed and integrated with Netlify and Durable.com."
+exit 0
+<html lang="en">
+<head>
+</head>
+<body>
+</body>
+</html>
+<html lang="en">
+<head>
+</head>
+<body>
+</body>
+</html>
+-1
+<html lang="en">
+<head>
+</head>
+<body>
+run
+npm install
+pkg update
+pkg upgrade
+pkg install git nodejs
+[build]
+[context.production]
+[context.staging]
+[context.deploy-preview]
+{   "name": "titan-cloud-ai",;   "version": "2.0.0",;   "scripts": {;     "dev": "vite",          // For local development;     "build": "vite build",  // For production builds (Netlify uses this)
+}
+const df = require('durable-functions');
+module.exports = df.orchestrator(function* (context) {
+});
+npm install
+npm run build
+npm install
+npm run dev
+#!/bin/bash
+# Ensure script runs with sudo privileges
+echo "Checking for sudo access..."
+sudo -v || { echo "This script requires sudo access. Please run with sudo."; exit 1; }
+v-bash: cd: titancloudai_deployable: No such file or directory-bash: cd: titancloudai_deployable: No such file or directoryunzip:  cannot find or open titancloudai_deployable.zip, titancloudai_deployable.zip.zip or titancloudai_deployable.zip.ZIP.-bash: cd: titancloudai_deployable: No such file or directoryunzip:  cannot find or open titancloudai_deployable.zip, titancloudai_deployable.zip.zip or titancloudai_deployable.zip.ZIP.-bash: cd: titancloudai_deployable: No such file or directory-bash: cd: titancloudai_deployable: No such file or directoryunzip:  cannot find or open titancloudai_deployable.zip, titancloudai_deployable.zip.zip or titancloudai_deployable.zip.ZIP.-bash: cd: titancloudai_deployable: No such file or directoryunzip:  cannot find or open titancloudai_deployable.zip, titancloudai_deployable.zip.zip or titancloudai_deployable.zip.ZIP.
+unzip titancloudai_deployable.zip
+cd titancloudai_deployable
+unzip titancloudai_deployable.zip
+cd titancloudai_deployable
+sudo apt install python3 python3-pip
+cd titancloudai_deployable
+unzip:  cannot find or open titancloudai_deployable.zip, titancloudai_deployable.zip.zip or titancloudai_deployable.zip.ZIP.
+-bash: cd: titancloudai_deployable: No such file or dire
+ls
+cd ~/Downloads
+mv titancloudai_deployable.zip ~/
+cd ~
+find ~ -name "titancloudai_deployable.zip"
+ls titancloudai_deployable.zip
+apt instal npm
+apt install npm
+n
+no
+root
+pwd
+find ~ -name "titancloudai_deployable.zip"
+cd downloads
+cd /home/yourname/Downloads
+ls
+unzip ~/Downloads/titancloudai_deployable.zip -d ~/titancloudai
+ls
+cd ~/Downloads
+pwd
+cd ~/Downloads
+unzip ~/Downloads/titancloudai_deployable.zip
+npm install
+npm run install
+cd
+ls
+cd packag'
+cd packag'
+cd package-lock.jason
+package-lock , json
+LinuxFiles  package-lock.json  project
+ls
+cd LinuxFiles
+cd package-lock.jason
+project
+cd project
+ls
+run web.zip
+self growtb
+self growth
+cd self growth
+reset
+ls
+cd self_optimization
+ls
+run ai_self_optimaizer
+run npm install
+npm intstall
+npm help
+ls
+update
+ls
+cd linuxfiles
+cd LinuxFiles
+ls
+cd package.json
+npm install
+npm audit
+npm audit fix
+ls
+update
+pkg update
+cd venv
+ls
+cd LinuyxFiles
+cd LinuxFiles
+dashboard
+cd ~/Downloads/frontend
+ls/downloads
+ls
+ls ~/Downloads
+cd ~/AI\ Bot\ Manager
+ls
+cd ~/project
+ls
+npm install
+npm run build
