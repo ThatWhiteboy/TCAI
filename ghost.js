@@ -1,0 +1,1 @@
+// Placeholder for backend/bots/ghost.js
