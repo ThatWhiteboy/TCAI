@@ -1,0 +1,1 @@
+// Placeholder for infra/terraform/variables.tf
