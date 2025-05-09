@@ -1,1 +1,15 @@
 # Configuration file for Netlify deployment
+# Netlify configuration file for deploying the TCAI project
+
+[build]
+  base = "src" # Adjust this directory to match your project's base directory, if needed.
+  publish = "dist" # Adjust this to the directory where your build files are generated.
+  command = "npm run build" # Adjust this to your project's build command.
+
+[dev]
+  framework = "#custom" # Specify your framework here, e.g., "react", "vue", or leave as custom.
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
