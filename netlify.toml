@@ -1,15 +1,9 @@
-# Configuration file for Netlify deployment
-# Netlify configuration file for deploying the TCAI project
-
 [build]
-  base = "web" # Adjust this directory to match your project's base directory, if needed.
-  publish = "dist" # Adjust this to the directory where your build files are generated.
-  command = "npm run build" # Adjust this to your project's build command.
-
-[dev]
-  framework = "#custom" # Specify your framework here, e.g., "react", "vue", or leave as custom.
+base = "frontend"
+command = "npm run build"
+publish = "dist"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+from = "/api/*"
+to = "https://your-api.azurewebsites.net/:splat"
+status = 200
