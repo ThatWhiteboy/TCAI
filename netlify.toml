@@ -2,7 +2,7 @@
 # Netlify configuration file for deploying the TCAI project
 
 [build]
-  base = "src" # Adjust this directory to match your project's base directory, if needed.
+  base = "web" # Adjust this directory to match your project's base directory, if needed.
   publish = "dist" # Adjust this to the directory where your build files are generated.
   command = "npm run build" # Adjust this to your project's build command.
 
