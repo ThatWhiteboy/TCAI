@@ -766,3 +766,508 @@ cd ~/project
 ls
 npm install
 npm run build
+sudo apt-get update
+sudo apt-get install git
+sudo apt-get update
+sudo apt-get install git
+sudo apt-get update
+sudo apt-get install git
+git init
+git remote add origin https://github.com/ThatWhiteboy/3.0.git
+git add .
+git commit -m "Initial push"
+git branch -M main
+git push -u origin main
+unzip 3.0-main\ \(1\).zip
+cd 3.0-main
+git push -u origin main
+git push
+push.autoSetupRemote
+dir
+cd 
+push.autoSetupRemote
+cd push.autoSetupRemote
+run push.autoSetupRemote
+'push.autoSetupRemote' 
+ghit push
+git push
+sudo apt-get update
+sudo apt-get install git
+npm run create-zip
+bash termux-setup.sh
+bash termux-fix.sh
+bash setup_termux.shbash setup_termux.sh
+
+bash termux-fix.sh
+bash setup_termux.sh
+mkdir titan-cloud-clean && cd titan-cloud-clean
+cat > cleanup.sh << 'EOF'
+#!/bin/bash
+
+# Create clean structure
+mkdir -p titan_cloud_ai/{website,src,config}
+
+# Move important files (modify these paths to match yours)
+mv titan_cloud_ai_website/* titan_cloud_ai/website/ 2>/dev/null
+mv src/* titan_cloud_ai/src/ 2>/dev/null
+mv *.toml *.json titan_cloud_ai/config/ 2>/dev/null
+
+# Remove unwanted files
+rm -rf .github/ node_modules/ old_*/ *.bak *.tmp
+
+echo "Cleaned up! New structure:"
+tree -L 2
+EOF
+
+n$ cat > cleanup.sh << 'EOF'
+#!/bin/bash
+
+# Create clean structure
+mkdir -p titan_cloud_ai/{website,src,config}
+
+# Move important files (modify these paths to match yours)
+mv titan_cloud_ai_website/* titan_cloud_ai/website/ 2>/dev/null
+mv src/* titan_cloud_ai/src/ 2>/dev/null
+mv *.toml *.json titan_cloud_ai/config/ 2>/dev/null
+niles0711@penguin:~$ mkdir titan-cloud-clean && cd titan-cloud-clean
+ mkdir titan-cloud-clean && cd titan-cloud-clean
+chmod +x cleanup.sh
+./cleanup.sh
+dir
+list
+exit
+cleanup.sh uji
+cleanup.sh 
+quit
+
+dir
+cd titan-cloud-clean
+cat > cleanup.sh << 'EOF'
+#!/bin/bash
+
+# Create clean structure
+mkdir -p titan_cloud_ai/{website,src,config}
+
+# Move important files (modify these paths to match yours)
+mv titan_cloud_ai_website/* titan_cloud_ai/website/ 2>/dev/null
+mv src/* titan_cloud_ai/src/ 2>/dev/null
+mv *.toml *.json titan_cloud_ai/config/ 2>/dev/null
+
+# Remove unwanted files
+rm -rf .github/ node_modules/ old_*/ *.bak *.tmp
+
+echo "Cleaned up! New structure:"
+tree -L 2
+EOF
+
+cat > cleanup.sh << 'EOF'
+#!/bin/bash
+dir
+list
+new
+restart
+restart
+
+cd titan-cloud-clean
+chmod +x cleanup.sh
+./cleanup.sh
+cat > cleanup.sh << 'EOF'
+#!/bin/bash
+
+# Create clean structure
+mkdir -p titan_cloud_ai/{website,src,config}
+
+# Move important files (modify these paths to match yours)
+mv titan_cloud_ai_website/* titan_cloud_ai/website/ 2>/dev/null
+mv src/* titan_cloud_ai/src/ 2>/dev/null
+mv *.toml *.json titan_cloud_ai/config/ 2>/dev/null
+
+# Remove unwanted files
+rm -rf .github/ node_modules/ old_*/ *.bak *.tmp
+
+echo "Cleaned up! New structure:"
+tree -L 2
+chmod +x cleanup.sh
+./cleanup.sh
+
+new
+exit
+quit
+cd
+cd dir
+
+import shutil
+# Zip up the final TitanCloudAI project with updated .env and full files
+shutil.make_archive("/mnt/data/TitanCloudAI_Final", 'zip', "/mnt/data/project")
+"/mnt/data/TitanCloudAI_Final.zip"
+npm update
+git clone https://github.com/ThatWhiteboy/3.0.git
+
+cat > ai_self_optimizer.py <<'EOF'
+import openai
+import os
+
+def optimize_business():
+    try:
+        openai.api_key = os.getenv("OPENAI_API_KEY")
+        if not openai.api_key:
+            raise ValueError("Environment variable OPENAI_API_KEY is missing")
+        
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": "Continuously optimize Titan Cloud AI for maximum profitability, efficiency, and scalability. Detect and fix any errors automatically. Self-learn from past decisions to enhance future performance."},
+                {"role": "user", "content": "Run the latest optimization cycle for Titan Cloud AI and fix any issues found. Improve efficiency based on data trends."}
+            ]
+        )
+        return response["choices"][0]["message"]["content"]
+    except Exception as e:
+        print(f"Error during OpenAI API call: {e}")
+        return "Error optimizing business."
+
+if __name__ == "__main__":
+    print(optimize_business())
+EOF
+
+cat > ai_self_optimizer.py <<'EOF'
+import openai
+import os
+
+def optimize_business():
+    try:
+        openai.api_key = os.getenv("OPENAI_API_KEY")
+        if not openai.api_key:
+            raise ValueError("Environment variable OPENAI_API_KEY is missing")
+        
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": "Continuously optimize Titan Cloud AI for maximum profitability, efficiency, and scalability. Detect and fix any errors automatically. Self-learn from past decisions to enhance future performance."},
+                {"role": "user", "content": "Run the latest optimization cycle for Titan Cloud AI and fix any issues found. Improve efficiency based on data trends."}
+            ]
+        )
+        return response["choices"][0]["message"]["content"]
+    except Exception as e:
+        print(f"Error during OpenAI API call: {e}")
+        return "Error optimizing business."
+
+if __name__ == "__main__":
+    print(optimize_business())
+EOF
+
+cat > ai_self_optimizer.py <<'EOF'
+import openai
+import os
+
+def optimize_business():
+    try:
+        openai.api_key = os.getenv("OPENAI_API_KEY")
+        if not openai.api_key:
+            raise ValueError("Environment variable OPENAI_API_KEY is missing")
+        
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": "Continuously optimize Titan Cloud AI for maximum profitability, efficiency, and scalability. Detect and fix any errors automatically. Self-learn from past decisions to enhance future performance."},
+                {"role": "user", "content": "Run the latest optimization cycle for Titan Cloud AI and fix any issues found. Improve efficiency based on data trends."}
+            ]
+        )
+        return response["choices"][0]["message"]["content"]
+    except Exception as e:
+        print(f"Error during OpenAI API call: {e}")
+        return "Error optimizing business."
+
+if __name__ == "__main__":
+    print(optimize_business())
+EOF
+
+cat > server.js <<'EOF'
+// server.js - Titan Cloud AI Backend
+
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const twilio = require('twilio')(process.env.TWILIO_SID, process.env.TWILIO_AUTH);
+
+const app = express();
+app.use(cors());
+app.use(bodyParser.json());
+
+// Validate environment variables
+if (!process.env.STRIPE_SECRET_KEY || !process.env.TWILIO_SID || !process.env.TWILIO_AUTH) {
+    console.error("Missing required environment variables for Stripe or Twilio");
+    process.exit(1);
+}
+
+// Basic Root Route
+app.get('/', (req, res) => {
+  res.send('Titan Cloud AI Backend is running');
+});
+
+// Stripe Webhook Example
+app.post('/webhook/stripe', bodyParser.raw({ type: 'application/json' }), (req, res) => {
+    const sig = req.headers['stripe-signature'];
+    let event;
+    try {
+        event = stripe.webhooks.constructEvent(req.body, sig, process.env.STRIPE_WEBHOOK_SECRET);
+        console.log('Stripe event:', event.type);
+        res.status(200).send('Received');
+    } catch (err) {
+        console.error('Webhook Error:', err.message);
+        res.status(400).send(`Webhook Error: ${err.message}`);
+    }
+});
+
+// Twilio Messaging Endpoint
+app.post('/send-sms', async (req, res) => {
+    const { to, body } = req.body;
+    try {
+        if (!to || !body) {
+            throw new Error("Missing 'to' or 'body' field in request");
+        }
+
+        const message = await twilio.messages.create({
+            body,
+            from: process.env.TWILIO_PHONE,
+            to
+        });
+        res.status(200).json({ success: true, sid: message.sid });
+    } catch (err) {
+        console.error('SMS Error:', err.message);
+        res.status(500).json({ success: false, error: err.message });
+    }
+});
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+    console.log(`Titan Cloud AI backend running on port ${PORT}`);
+});
+EOF
+
+cat > main.js <<'EOF'
+// Titan Cloud AI - Core Automation Blueprint
+
+console.log("Initializing Stripe subscription logic...");
+// Add actual Stripe subscription logic here
+
+console.log("Sending Twilio SMS updates...");
+// Add Twilio SMS update logic here
+
+console.log("Running HILA + Big Homie AI learning algorithms...");
+// Add AI logic here
+EOF
+
+cat > style.css <<'EOF'
+body {
+  margin: 0;
+  background: #0f172a;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+img {
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+a {
+  margin-top: 2rem;
+  display: inline-block;
+  background: #3b82f6;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+footer {
+  margin-top: 50px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+EOF
+
+# Modify index.html to link the new style.css file
+sed -i '/<style>/,/<\/style>/c\<link rel="stylesheet" href="style.css">' index.html
+cat > .github/workflows/deploy.yml <<'EOF'
+name: Netlify Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Build project
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v2.0.0
+        with:
+          publish-dir: ./dist
+          production-branch: main
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
+EOF
+
+git add .
+git commit -m "Implement error handling, externalize CSS, and fix CI/CD workflow"
+git push origin main
+try {
+} catch (error) {
+}
+<nav aria-label="Main Navigation">
+</nav>
+@media (max-width: 600px) {
+}
+<meta name="description" content="Titan Cloud AI - Autonomous AI-powered business solutions.">
+<meta name="keywords" content="AI, Automation, Business, Chatbots">
+<html lang="en">
+<head>
+</head>
+<body>
+</body>
+</html>
+git add .github/workflows/ci.yml
+git commit -m "Add CI workflow"
+git push origin main
+mkdir -p .github/workflows
+git clone https://github.com/ThatWhiteboy/3.0.git
+cd 3.0
+mkdir -p .github/workflows
+cd 3.0
+git add .github/workflows/ci.yml
+git commit -m "Add GitHub Actions workflow"
+git push origin main
+cd/linux files
+cd Linux files
+cd/Linux files
+cdc/ Linux
+dir
+cd Linuxfiles
+cd/Linuxfiles
+cd/ LinuxFiles
+cd LinuxFiles
+unzip terraform_1.11.4_linux_amd64.zip
+unzip terraform_<1.11.4>_linux_amd64.zip
+unzip terraform_1.1.4_linux_amd64.zip && sudo mv terraform /usr/local/bin/
+ls
+ls -lh terraform_*.zip
+cd ~/Downloads
+ls -lh
+cd
+ls -lh
+ls -lh terraform_*.zip
+terraform_1.11.4_linux_amd64.zip
+cd terraform_1.11.4_linux_amd64.zip
+cd/terraform_1.11.4_linux_amd64.zip
+rm terraform_*.zip
+cd ~/Downloads
+ls -lah | grep terraform
+cd ~/Downloads
+ls -lah | grep terraform
+pwd
+cd ~/Downloads
+find ~ -type f -iname "terraform*.zip" 2>/dev/null
+cd ~/Downloads
+ls
+cd ~/Downloads
+ls
+cd ~
+ls
+cd LinuxFiles
+ls
+cd
+unzip terraform_1.1.4_linux_amd64.zip && sudo mv terraform /usr/local/bin/
+pip3 install gibson-cli
+apt install
+ls
+cd project
+ls
+?
+cd src
+ls
+cd _tests_
+cd __tests__
+ls
+run
+home
+clean
+new
+clear
+new
+clear
+cd
+#!/bin/bash
+# Check if package.json exists
+if [ ! -f "package.json" ]; then     echo;  new; niles0711@penguin:~/project/src/__tests__$ cd
+ls
+cd downloads
+#!/bin/bash
+# Check if package.json exists
+if [ ! -f "package.json" ]; then     echo; 
+set -e;  echo "Running setup script..."; 
+if [ -f "backend/requirements.txt" ]; then     echo "Installing Python dependencies...";     pip install -r backend/requirements.txt; fi; 
+if [ -f "package.json" ]; then     echo "Installing Node.js dependencies...";     npm install; fi;  echo "Setup complete!";  setup complete
+.github/workflows/terraform.yml
+dir
+ls
+cd 3.0
+ls
+unzip titancloudai-clean-deploy.zip
+run pkg  final-launch.zip       netlify.toml   titancloudai-clean-deploy.zip      titancloudai-root-final.zip
+?
+npm install
+npm install titancloudai-clean-deploy.zip
+np,]
+npm install https://github.com/ThatWhiteboy/TCAI
+npm run https://github.com/ThatWhiteboy/TCAI
+npm run
+npm run-script
+ls
+npm run-script
+-p build && cp index.html build/index.html && cp titancloudai_logo.webp build/
+build && cp index.html build/index.html && cp titancloudai_logo.webp build
+build
+run build
+ls
+cd build
+ls
+titancloudai_logo.webp
+npm installtitancloudai_logo.webp
+npm install titancloudai_logo.webp
+mkdir -p build && cp index.html build/index.html && cp titancloudai_logo.webp build/
+exit
+cd ~/Downloads  # or wherever the file is
+unzip TCAI_frontend.zip -d ~/Projects/TCAI/frontend
+ls ~/Downloads | grep TCAI_frontend.zip
+mkdir -p ~/Downloads
+\
